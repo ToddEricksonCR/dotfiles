@@ -1,0 +1,58 @@
+select application_display_name , vendor_display_name , count(*)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+group by application_display_name , vendor_display_name 
+order by 3 desc
+
+select count(distinct customer_id)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+
+select count(distinct instance_id)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+
+
+select * 
+from migrator.installed_applications ia 
+where application_display_name  ilike 'Citrix XenApp%' 
+--and customer_id = '211285'
+--order by 3
+limit 200
+
+select * 
+from migrator.installed_applications ia 
+where application_display_name  ilike '%XenDesktop%' and vendor_display_name = 'Citrix Systems'
+and customer_id = '211285'
+order by 3
+limit 200
+
+
+
+select c.id , c.company 
+	, COALESCE(count_of_VMwareHorizon_systems,0) as count_of_VMwareHorizon_systems
+	, COALESCE(count_of_XenDesktop_systems,0) as count_of_XenDesktop_systems
+	, COALESCE(count_of_Citrix_XenApp_systems,0) as count_of_Citrix_XenApp_systems
+	, COALESCE(count_of_RemoteDesktop_systems,0) as count_of_RemoteDesktop_systems
+from customers c 
+left join (select customer_id, count(distinct instance_id) as count_of_VMwareHorizon_systems
+	from migrator.installed_applications ia 
+	where application_display_name ilike '%VMware Horizon%'
+	group by customer_id ) as vm on c.id  = vm.customer_id 
+left join (select customer_id, count(distinct instance_id) as count_of_XenDesktop_systems
+	from migrator.installed_applications ia 
+	where application_display_name ilike '%XenDesktop%' and vendor_display_name = 'Citrix Systems'
+	group by customer_id ) as xd on c.id  = xd.customer_id 
+left join (select customer_id, count(distinct instance_id) as count_of_Citrix_XenApp_systems
+	from migrator.installed_applications ia 
+	where application_display_name ilike '%Citrix XenApp%'
+	group by customer_id ) as ci on c.id  = ci.customer_id 
+left join (select customer_id, count(distinct instance_id) as count_of_RemoteDesktop_systems
+	from migrator.installed_applications ia 
+	where application_display_name ilike '%Remote Desktop%'
+	group by customer_id ) as rdp on c.id  = rdp.customer_id 
+where count_of_VMwareHorizon_systems is not null 
+	or count_of_XenDesktop_systems is not null 
+	or count_of_Citrix_XenApp_systems is not null 
+	or count_of_RemoteDesktop_systems is not null 
+

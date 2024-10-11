@@ -1,0 +1,37 @@
+--select * from customers c where id in (211203, 211113) limit 5
+
+select * from customers c where email ilike '%scent%' limit 5  --210949
+
+select * from customers c where name ilike '%scent%' limit 5  --210949
+
+--select * from datasource_metadata dm 
+
+select * from customers c where expiration_date > current_date  limit 5  --210949
+
+select id, company ,email,expiration_date ,is_aws ,is_azure ,is_google  from customers c 
+where email ilike 'cancelled%' 
+  and expiration_date is not null 
+  and restricted_country = 'US' 
+  and database_key <> 'DEMO_DB'
+  order by expiration_date desc 
+  limit 5  --210949
+
+select * from customers where database_key = 'MASTER_VMWARE11' order by id desc limit 5
+
+
+select * from customers c 
+inner join customer_onboarding_status cos on c.id = cos.customer_id 
+where c.is_azure = true 
+--and c.database_key = 'CENTRAL_VMWARE1'
+and c.id = 210302
+
+select * from customers c where id = 210302
+
+
+select * from customers c 
+inner join customer_onboarding_status cos on c.id = cos.customer_id 
+where c.database_key = 'CENTRAL_VMWARE1'
+
+
+select * from datasource_metadata
+select * from iaas_region_details where provider = 'Azure' order by region

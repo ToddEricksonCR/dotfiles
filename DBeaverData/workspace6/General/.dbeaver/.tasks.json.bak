@@ -1,0 +1,112 @@
+{
+	"03e1ab93-8e4d-4d33-aea0-488863654b36": {
+		"task": "mysqlDatabaseBackup",
+		"label": "dump_corteza",
+		"description": "",
+		"createTime": "202403151415",
+		"updateTime": "202403151415",
+		"state": {
+			"project": "General",
+			"dataSource": "mysql8-18e42a017d3-22e5dd65e9270db8",
+			"databaseObjects": [
+				"mysql8-18e42a017d3-22e5dd65e9270db8/dbname"
+			],
+			"tools.wizard.MySQLExportSettings.extraArgs": "--no-tablespaces",
+			"clientHomeName": "/usr/local/Cellar/mysql-client/8.3.0",
+			"export.outputFilePattern": "dump-${database}-${timestamp}.sql",
+			"export.outputFolder": "/Users/todd.erickson",
+			"MySQL.export.method": "NORMAL",
+			"MySQL.export.noCreateStatements": "false",
+			"MySQL.export.addDropStatements": "true",
+			"MySQL.export.disableKeys": "true",
+			"MySQL.export.extendedInserts": "true",
+			"MySQL.export.dumpEvents": "false",
+			"MySQL.export.comments": "false",
+			"MySQL.export.removeDefiner": "false",
+			"MySQL.export.binariesInHex": "false",
+			"MySQL.export.noData": "false",
+			"MySQL.export.showViews": "false",
+			"MySQL.overrideNativeCredentials": "false",
+			"exportObjects": [
+				{
+					"catalog": "mysql8-18e42a017d3-22e5dd65e9270db8/dbname"
+				}
+			]
+		}
+	},
+	"7dc6e183-0615-49aa-a81c-dbfa9a026d91": {
+		"task": "mysqlDatabaseBackup",
+		"label": "dump corteza dev",
+		"description": "",
+		"createTime": "202406041252",
+		"updateTime": "202406041252",
+		"state": {
+			"project": "General",
+			"dataSource": "mysql8-18e42a017d3-22e5dd65e9270db8",
+			"databaseObjects": [
+				"mysql8-18e42a017d3-22e5dd65e9270db8/dbname"
+			],
+			"tools.wizard.MySQLExportSettings.extraArgs": "--no-tablespaces",
+			"clientHomeName": "/usr/local/Cellar/mysql-client/8.3.0",
+			"export.outputFilePattern": "dump-${database}-${timestamp}.sql",
+			"export.outputFolder": "/Users/todd.erickson",
+			"MySQL.export.method": "NORMAL",
+			"MySQL.export.noCreateStatements": "false",
+			"MySQL.export.addDropStatements": "true",
+			"MySQL.export.disableKeys": "true",
+			"MySQL.export.extendedInserts": "true",
+			"MySQL.export.dumpEvents": "false",
+			"MySQL.export.comments": "false",
+			"MySQL.export.removeDefiner": "false",
+			"MySQL.export.binariesInHex": "false",
+			"MySQL.export.noData": "false",
+			"MySQL.export.showViews": "false",
+			"MySQL.overrideNativeCredentials": "false",
+			"exportObjects": [
+				{
+					"catalog": "mysql8-18e42a017d3-22e5dd65e9270db8/dbname",
+					"tables": [
+						"automation_workflows",
+						"reminders",
+						"compose_module_field",
+						"credentials",
+						"auth_clients",
+						"resource_translations",
+						"federation_module_shared",
+						"data_privacy_requests",
+						"settings",
+						"federation_nodes",
+						"federation_nodes_sync",
+						"compose_chart",
+						"federation_module_exposed",
+						"attachments",
+						"dal_sensitivity_levels",
+						"automation_triggers",
+						"users",
+						"compose_page",
+						"rbac_rules",
+						"apigw_filters",
+						"labels",
+						"compose_module",
+						"dal_schema_alterations",
+						"applications",
+						"compose_attachment",
+						"role_members",
+						"dal_connections",
+						"auth_confirmed_clients",
+						"queue_messages",
+						"reports",
+						"compose_namespace",
+						"data_privacy_request_comments",
+						"flags",
+						"roles",
+						"templates",
+						"compose_page_layout",
+						"apigw_routes",
+						"federation_module_mapping"
+					]
+				}
+			]
+		}
+	}
+}

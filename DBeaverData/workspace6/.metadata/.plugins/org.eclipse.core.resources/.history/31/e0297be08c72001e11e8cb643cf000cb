@@ -1,0 +1,34 @@
+--Get the customerID for an instwnce name
+select * from awsinstances where instancename ilike 'sec-cs1';
+--Get the instanceID when you know the instance name and customerID
+select * from awsinstances where customerid  = 211412 and instancename ilike 'CTX-SQA';
+
+--Get the sizing details when you know the instance name and customerID and PlanID
+select d.sizing_details --, * 
+from vmware_cpu_mapping_details_v2 d
+inner join awsinstances a on a.customerid  = d.customer_id and a.instanceid  = d.instance_id 
+where a.customerid = 211412 and a.instancename ilike 'CTX-SQA' and plan_id = 9
+
+select * from plan_details pd where customer_id = 211510
+
+select * from plan_details pd where display_name ilike 'ola 2%' and plan_id <>7
+
+
+--Plans ***This is not always accurate****
+/*
+%   display_name                          display_rank  use_for_landing_page is_visible_always plan_id
+%   --------------------------------------------------------------------------------------------------
+%   OLA 2 - Workload, On-Demand           1             true                 true              7
+%   OLA 1 - Hardware                      2             false                false             6
+%   OLA 3 - Workload, 1 Year RI (AUP)     3             false                false             8
+%   OLA 4 - Workload, 1 Year RI (NUP)     4             false                false             9
+%   OLA 5 - Workload, 3 Year RI (AUP)     5             false                false             10
+%   OLA 6 - Workload, 3 Year RI (NUP)     6             false                false             11
+%   OLA 7 - Workload, Dedicated Hosts     7             false                false             12
+%   OLA 8 - RDS Workload, 1 Year RI (NUP) 8             false                false             13
+%   Workload, On-Demand                   9             false                false             2
+%   Hardware, On-Demand                   10            false                false             1
+%   Workload, All Upfront 3-yr            11            false                false             3
+%   Workload, Cost Optimized 3-yr         12            false                false             4
+%   Workload, All Upfront 1-yr            13            false                false             5
+*/

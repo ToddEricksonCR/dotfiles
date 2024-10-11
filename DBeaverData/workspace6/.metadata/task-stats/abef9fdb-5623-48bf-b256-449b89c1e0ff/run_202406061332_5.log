@@ -1,0 +1,26 @@
+2024-06-06 13:32:47.636 - Task 'dump corteza stage' (abef9fdb-5623-48bf-b256-449b89c1e0ff) started
+2024-06-06 13:32:47.636 - Load database object list
+2024-06-06 13:32:47.637 - 	Load mysql8-18fe3ee3f46-7f95ce5454606a98/corteza
+2024-06-06 13:32:47.638 - MySQL dump
+2024-06-06 13:32:47.638 - 	MySQL dump
+2024-06-06 13:32:47.638 - MySQL dump
+2024-06-06 13:32:47.638 - 	Start native tool
+/usr/local/Cellar/mysql-client/8.3.0/bin/mysqldump --skip-lock-tables --add-drop-table --disable-keys --extended-insert --no-tablespaces -u corteza --host=localhost --port=40205 corteza settings labels attachments users auth_clients compose_namespace automation_workflows compose_attachment federation_nodes compose_page federation_module_mapping reminders resource_translations roles dal_connections dal_sensitivity_levels auth_confirmed_clients federation_module_exposed applications credentials flags compose_module reports federation_module_shared compose_page_layout templates compose_chart apigw_routes compose_module_field data_privacy_request_comments data_privacy_requests rbac_rules role_members apigw_filters dal_schema_alterations queue_messages federation_nodes_sync automation_triggers
+2024-06-06 13:32:47.674 - 	Executing
+Task 'dump corteza stage' started at Thu Jun 06 13:32:47 CDT 2024
+mysqldump: Got error: 1045: Access denied for user 'corteza'@'localhost' (using password: YES) when trying to connect
+
+Task 'dump corteza stage' finished at Thu Jun 06 13:32:47 CDT 2024
+2024-06-06 13:32:47.881 - IO error: Process failed (exit code = 2). See error log.
+2024-06-06 13:32:47.881 - java.io.IOException: Process failed (exit code = 2). See error log.
+	at org.jkiss.dbeaver.tasks.nativetool.AbstractNativeToolHandler.validateErrorCode(AbstractNativeToolHandler.java:263)
+	at org.jkiss.dbeaver.tasks.nativetool.AbstractNativeToolHandler.executeProcess(AbstractNativeToolHandler.java:241)
+	at org.jkiss.dbeaver.tasks.nativetool.AbstractNativeToolHandler.doExecute(AbstractNativeToolHandler.java:283)
+	at org.jkiss.dbeaver.ext.mysql.tasks.MySQLNativeToolHandler.doExecute(MySQLNativeToolHandler.java:47)
+	at org.jkiss.dbeaver.tasks.nativetool.AbstractNativeToolHandler.lambda$0(AbstractNativeToolHandler.java:87)
+	at org.jkiss.dbeaver.registry.task.TaskRunJob.run(TaskRunJob.java:157)
+	at org.jkiss.dbeaver.tasks.nativetool.AbstractNativeToolHandler.executeTask(AbstractNativeToolHandler.java:79)
+	at org.jkiss.dbeaver.registry.task.TaskRunJob.executeTask(TaskRunJob.java:143)
+	at org.jkiss.dbeaver.registry.task.TaskRunJob.run(TaskRunJob.java:104)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

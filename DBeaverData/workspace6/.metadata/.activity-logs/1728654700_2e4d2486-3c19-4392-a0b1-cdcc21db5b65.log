@@ -1,0 +1,6 @@
+3757:APP_OPEN:startTime=1728654694462
+8616:GENERAL_SHOW_PERSPECTIVE:perspective=org.jkiss.dbeaver.core.perspective
+8616:GENERAL_VIEW_OPEN:view=org.jkiss.dbeaver.core.databaseNavigator
+8616:GENERAL_VIEW_OPEN:view=org.jkiss.dbeaver.core.projectExplorer
+9831:Open connection:driver=postgresql:postgres-jdbc
+9943:SQL_EDITOR_OPEN:driver=postgresql:postgres-jdbc

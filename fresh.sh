@@ -19,6 +19,10 @@ fi
 rm -rf $HOME/.zshrc
 ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+# DBeaver
+rm -rf $HOME/Library/DBeaverData 
+ln -s $HOME/.dotfiles/DBeaverData $HOME/Library/DBeaverData
+
 # Update Homebrew recipes
 brew update
 

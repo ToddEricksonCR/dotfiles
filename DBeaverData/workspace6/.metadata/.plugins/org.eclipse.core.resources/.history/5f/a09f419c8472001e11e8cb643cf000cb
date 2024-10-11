@@ -1,0 +1,16 @@
+select application_display_name , vendor_display_name , count(*)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+group by application_display_name , vendor_display_name 
+order by 3 desc
+
+select count(distinct customer_id)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+
+select count(distinct instance_id)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+
+
+select * from migrator.machine_processes_by_cpu mpbc  limit 200

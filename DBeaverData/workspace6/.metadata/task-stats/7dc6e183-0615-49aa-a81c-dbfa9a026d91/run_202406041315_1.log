@@ -1,0 +1,11 @@
+2024-06-04 13:15:18.950 - Task 'dump corteza dev' (7dc6e183-0615-49aa-a81c-dbfa9a026d91) started
+2024-06-04 13:15:18.951 - Load database object list
+2024-06-04 13:15:18.951 - 	Load mysql8-18e42a017d3-22e5dd65e9270db8/dbname
+2024-06-04 13:15:18.951 - MySQL dump
+2024-06-04 13:15:18.952 - 	MySQL dump
+2024-06-04 13:15:18.952 - MySQL dump
+2024-06-04 13:15:18.952 - 	Start native tool
+/usr/local/Cellar/mysql-client/8.3.0/bin/mysqldump --skip-lock-tables --add-drop-table --disable-keys --extended-insert --no-tablespaces -u dbuser --host=54.157.230.100 --port=3306 dbname automation_workflows reminders compose_module_field credentials auth_clients resource_translations federation_module_shared data_privacy_requests settings federation_nodes federation_nodes_sync compose_chart federation_module_exposed attachments dal_sensitivity_levels automation_triggers users compose_page rbac_rules apigw_filters labels compose_module dal_schema_alterations applications compose_attachment role_members dal_connections auth_confirmed_clients queue_messages reports compose_namespace data_privacy_request_comments flags roles templates compose_page_layout apigw_routes federation_module_mapping
+2024-06-04 13:15:19.325 - 	Executing
+Task 'dump corteza dev' started at Tue Jun 04 13:15:19 CDT 2024
+Task 'dump corteza dev' finished at Tue Jun 04 13:17:39 CDT 2024

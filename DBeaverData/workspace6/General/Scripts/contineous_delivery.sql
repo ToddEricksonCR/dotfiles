@@ -1,0 +1,1 @@
+UPDATE customers SET continuous_delivery = TRUE WHERE email = 'gruposese-20221121@cloudamize.com';

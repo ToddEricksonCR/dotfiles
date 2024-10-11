@@ -1,0 +1,189 @@
+select var_value  from cmz_static_variables csv2 where var_name = 'feature_flags'
+
+exit
+
+--DEV
+[
+	{
+		"feature_name" : "SETTINGS",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "ASSESSMENT_DETAILS",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "INVENTORY_SETTINGS",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "AGENT_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "AZURE_SETUP",
+		"enabled" : false
+	},
+	{
+		"feature_name" : "VCENTER_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "USER_MANAGEMENT",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "USER_PROFILE",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "EDIT_USER_PROFILE",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "MFA_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "EXTERNAL_DATA",
+		"enabled" : false
+	}
+]
+
+
+--STAGING
+
+[
+	{
+		"feature_name" : "SETTINGS",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "ASSESSMENT_DETAILS",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "INVENTORY_SETTINGS",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "AGENT_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "AZURE_SETUP",
+		"enabled" : false
+	},
+	{
+		"feature_name" : "VCENTER_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "USER_MANAGEMENT",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "USER_PROFILE",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "EDIT_USER_PROFILE",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "MFA_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "EXTERNAL_DATA",
+		"enabled" : false
+	},
+	{
+		"feature_name" : "HYPERCARE",
+		"enabled" : true,
+		"conditions" : {
+			"customers" : [210298]
+		}
+	},
+	{
+		"feature_name" : "ONRAMP",
+		"enabled" : true,
+		"conditions" : {
+			"customers" : [210298]
+		}
+	},
+	{
+		"feature_name" : "INSTANCE_SETTINGS_EDIT",
+		"enabled" : true
+	}
+]
+
+--PROD
+[
+	{
+		"feature_name" : "SETTINGS",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "ASSESSMENT_DETAILS",
+		"enabled" : true,
+		"conditions" : {
+			"master_password" : true
+		}
+	},
+	{
+		"feature_name" : "INVENTORY_SETTINGS",
+		"enabled" : true,
+		"conditions" : {
+			"customers" : [211236, 211365]
+		}
+	},
+	{
+		"feature_name" : "AGENT_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "AZURE_SETUP",
+		"enabled" : false
+	},
+	{
+		"feature_name" : "VCENTER_SETUP",
+		"enabled" : true
+	},
+	{
+		"feature_name" : "USER_MANAGEMENT",
+		"enabled" : true,
+		"conditions" : {
+			"customers" : [210509,211593, 212078, 211365]
+		}
+	},
+	{
+		"feature_name" : "USER_PROFILE",
+		"enabled" : true,
+		"conditions" : {
+			"customers" : [210509,211593, 212078, 211365]
+		}
+	},
+	{
+		"feature_name" : "EDIT_USER_PROFILE",
+		"enabled" : true,
+		"conditions" : {
+			"customers" : [210509,211593, 212078, 211365]
+		}
+	},
+	{
+		"feature_name" : "MFA_SETUP",
+		"enabled" : false
+	},
+	{
+		"feature_name" : "EXTERNAL_DATA",
+		"enabled" : false
+	},
+	{
+		"feature_name" : "HYPERCARE",
+		"enabled" : true,
+		"conditions" : {
+			"customers" : [210509,211519]
+		}
+	}
+]

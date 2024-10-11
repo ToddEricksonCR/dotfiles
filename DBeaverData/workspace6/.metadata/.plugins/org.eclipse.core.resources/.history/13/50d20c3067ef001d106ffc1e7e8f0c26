@@ -1,0 +1,3 @@
+select c.id, c.company, c.email, cos2.onboarding_completion_date, date(cos2.onboarding_completion_date) + 81 as expected_experation_date, c.expiration_date  from customers c 
+inner join customer_onboarding_status cos2 on c.id = cos2.customer_id 
+where c.expiration_date > current_date and c.expiration_date < date(cos2.onboarding_completion_date) + 81

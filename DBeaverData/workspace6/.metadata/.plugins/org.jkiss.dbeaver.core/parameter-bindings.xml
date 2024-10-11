@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bindings>
+	<parameter name="$5" value="NULL"/>
+	<parameter name="$6" value="0"/>
+	<parameter name="$1" value="210785"/>
+	<parameter name="$2" value="NULL"/>
+	<parameter name="$3" value="NULL"/>
+	<parameter name=":customerId" value="210785"/>
+	<parameter name=":isUdp" value="true"/>
+	<parameter name=":instanceId" value="null"/>
+	<parameter name=":assetId" value="130296"/>
+	<parameter name=":groupId" value="99"/>
+	<parameter name=":customer_id" value="210756"/>
+	<parameter name="CUSTOMERID" value="210994"/>
+	<parameter name="ASSETID" value="NULL"/>
+	<parameter name="GROUPID" value="NULL"/>
+	<parameter name="INSTANCEID" value="NULL"/>
+	<parameter name="IN_PLAN_ID" value="1"/>
+	<parameter name="IN_CUSTOMER_ID" value="211178"/>
+	<parameter name="IN_ASSET_ID" value="NULL"/>
+	<parameter name="IN_GROUP_ID" value="NULL"/>
+	<parameter name="IN_COMPONENT_ID" value="Null"/>
+	<parameter name="IN_INSTANCE_ID" value="NULL"/>
+	<parameter name="ENTITY_TYPE" value="NULL"/>
+	<parameter name="customerId" value="210896"/>
+</bindings>

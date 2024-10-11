@@ -1,0 +1,67 @@
+select * from customers c where id in (211751) limit 5
+
+select * from customers c where email ilike '%dvtrad%' limit 50  --210949
+
+select * from customers c where name ilike '%nsw%' limit 5  --210949
+
+select * from customers c where company ilike '%nsw%' limit 5  --210949
+
+--select * from datasource_metadata dm 
+
+select * from customers c where expiration_date > current_date  limit 5  --210949
+
+select id, company ,email,expiration_date ,is_aws ,is_azure ,is_google, * from customers c 
+where email ilike 'cancelled%' 
+  and expiration_date is not null 
+  and restricted_country = 'US' 
+  and database_key = 'DEMO_DB'
+  and company not ilike '%test%'
+  and data_status = 'production_ready'
+  order by expiration_date desc 
+  limit 50  --210949
+
+select * from customers where database_key = 'MASTER_VMWARE11' order by id desc limit 5
+
+
+select *
+from customers c 
+--inner join customer_onboarding_status cos on c.id = cos.customer_id 
+where 1=1
+ -- and c.is_azure = true 
+ -- and c.is_aws = true
+  and c.database_key = 'MASTER_VMWARE12'
+  and isconfigured = 'yes'
+ -- and c.data_status = 'production_ready'
+--and c.id = 210302
+  order by id desc
+limit 100
+  
+select min(id) from customers c where c.database_key = 'MASTER_VMWARE12'
+
+select * from customers c where id > 210890 and id < 211000
+  
+select * from customers c where id = 211525
+
+select * from customers c 
+inner join customer_onboarding_status cos on c.id = cos.customer_id 
+where c.database_key = 'MASTER_VMWARE12'
+and c.id = 210580
+
+
+select * from datasource_metadata
+select * from iaas_region_details where provider = 'Azure' order by region
+
+
+select * from customers c 
+where raw_database_key = 'GERMANY_RAW1'
+order by id desc 
+limit 100
+
+select * from customers c 
+where raw_database_key ='RAW33'
+order by id desc limit 25
+
+select * from datasource_metadata dm 
+
+select var_value from cmz_static_variables where var_name = 'feature_flags' 
+

@@ -1,0 +1,815 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-18485ddcd11-72a9abfc7f86071b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "master prod",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30000",
+				"database": "master",
+				"url": "jdbc:postgresql://localhost:30000/master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18536225164-2c962385e6b9c581": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Master Dev",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "51000",
+				"database": "master",
+				"url": "jdbc:postgresql://localhost:51000/master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-185e593dc2b-73b2cea9a6759ed7": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "OLA Territory DB",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18800b0bd6e-52ffee01a0bfb05": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "NP-Cooked US Prod",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30004",
+				"database": "vmware",
+				"url": "jdbc:postgresql://localhost:30004/vmware",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-188020888eb-6f2aea03886693fe": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "RAW32 US Prod",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30003",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:30003/postgres",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-1880728fe16-562ed535ace2fbd": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "NP-Cooked EU",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "31004",
+				"database": "vmware",
+				"url": "jdbc:postgresql://localhost:31004/vmware",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18896f6aff0-3651da9cedb9acea": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "master staging",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "40200",
+				"database": "master",
+				"url": "jdbc:postgresql://localhost:40200/master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18907fcb524-3d09cf3fe21f4321": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "GERMANY_RAW2",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "31005",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:31005/postgres",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18964918fdd-119a3facc8757d0b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "RAW34 US Prod",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30006",
+				"database": "cconprem",
+				"url": "jdbc:postgresql://localhost:30006/cconprem",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-1896491a12b-6f935fa97e60272c": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "RAW33 US Prod",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30005",
+				"database": "cconprem",
+				"url": "jdbc:postgresql://localhost:30005/cconprem",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-189b1416adf-2d3e391ac126ef0f": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "DemoDB",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30007",
+				"database": "demodb",
+				"url": "jdbc:postgresql://localhost:30007/demodb",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-189b7f3116b-3f427cdae8b3c16c": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "NP-Cooked UAE",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "33001",
+				"database": "vmware",
+				"url": "jdbc:postgresql://localhost:33001/vmware",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18a856d0ce7-7110da72b5e3512b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Dashboard US Prod",
+			"save-password": true,
+			"read-only": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30000",
+				"database": "dashboard",
+				"url": "jdbc:postgresql://localhost:30000/dashboard",
+				"configurationType": "MANUAL",
+				"type": "prod",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18c1d230784-54a3f2793412d4ea": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "US KB",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30002",
+				"database": "knowledgebase",
+				"url": "jdbc:postgresql://localhost:30002/knowledgebase",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18d9ec214cd-3bc2e814d122024e": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "US KB Dev",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "51002",
+				"database": "knowledgebase",
+				"url": "jdbc:postgresql://localhost:51002/knowledgebase",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18d9ec3ffda-59adcf1322f0b70c": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "US KB Staging",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "51002",
+				"database": "knowledgebase",
+				"url": "jdbc:postgresql://localhost:51002/knowledgebase",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18e42a017d3-22e5dd65e9270db8": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "44.204.71.34",
+			"save-password": true,
+			"configuration": {
+				"host": "54.157.230.100",
+				"port": "3306",
+				"url": "jdbc:mysql://54.157.230.100:3306/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18e43e9afdd-71701d2e66f8ddd6": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "Corteza Dev",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "51102",
+				"url": "jdbc:mysql://localhost:51102/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3",
+					"allowPublicKeyRetrieval": "FALSE",
+					"useSSL": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18e440db286-351720ffd92809dd": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "Corteza Local",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18e5dc6fa3a-2437f666da66cef9": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Cooked US Dev",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "51001",
+				"database": "vmware",
+				"url": "jdbc:postgresql://localhost:51001/vmware",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18e9a2f2037-1762f3ba02113f15": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Cooked US Staging ",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "40203",
+				"database": "vmware",
+				"url": "jdbc:postgresql://localhost:40203/vmware",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18fdfc33527-571954163c36ee43": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18fe3ee3f46-7f95ce5454606a98": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "Corteza-stage",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "40205",
+				"url": "jdbc:mysql://localhost:40205/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		},
+		"mysql8-18fef19e870-7675d3d8e3082a74": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "Corteza-prod",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30009",
+				"url": "jdbc:mysql://localhost:30009/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-190dc25cc22-266f598609223fe": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "Corteza-prod 1",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "30009",
+				"url": "jdbc:mysql://localhost:30009/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-190dc269a0b-49adc63990316c4b": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "Corteza-stage 1",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "40205",
+				"url": "jdbc:mysql://localhost:40205/",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/mysql-client/8.3.0",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-190dc2b5f79-71311976694789ac": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Corteza-stage postgres",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "40206",
+				"database": "corteza",
+				"url": "jdbc:postgresql://localhost:40206/corteza",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/postgresql@14/14.12",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-chosen-role@": "",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "true",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-19114ff327a-e6458c6ab9009c0": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "local corteza postgres",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "corteza",
+				"url": "jdbc:postgresql://localhost:5432/corteza",
+				"configurationType": "MANUAL",
+				"home": "/usr/local/Cellar/postgresql@14/14.12",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"network-profiles": {
+		"Prod": {
+			"name": "Prod",
+			"handlers": {
+				"ssh_tunnel": {
+					"type": "TUNNEL",
+					"enabled": true,
+					"save-password": true,
+					"properties": {
+						"host": "34.200.228.178",
+						"port": 22.0,
+						"authType": "PUBLIC_KEY",
+						"keyPath": "/Users/todd.erickson/.ssh/bastion_ssh_key.pem",
+						"implementation": "sshj",
+						"shareTunnels": true,
+						"localHost": "",
+						"remoteHost": ""
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": false,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		},
+		"prod": {
+			"name": "Production",
+			"color": "org.jkiss.dbeaver.color.connectionType.prod.background",
+			"description": "Production database",
+			"auto-commit": false,
+			"confirm-execute": false,
+			"confirm-data-change": true,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 600,
+			"auto-close-connections": true,
+			"close-connections-period": 3600
+		}
+	}
+}

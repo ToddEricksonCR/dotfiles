@@ -1,0 +1,38 @@
+select application_display_name , vendor_display_name , count(*)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+group by application_display_name , vendor_display_name 
+order by 3 desc
+
+select count(distinct customer_id)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+
+select count(distinct instance_id)
+from migrator.installed_applications ia 
+where last_updated is null and vendor_display_name is not null
+
+
+select * 
+from migrator.installed_applications ia 
+where application_display_name = 'VMware Tools'
+and customer_id = 210688
+order by 3
+limit 200
+
+select c.id , c.company , COALESCE(count_of_VMwareHorizon_systems,0) , COALESCE(count_of_Citrix_systems,0), COALESCE(count_of_RemoteDesktop_systems,0)
+from customers c 
+left join (select customer_id, count(distinct instance_id) as count_of_VMwareHorizon_systems
+	from migrator.installed_applications ia 
+	where application_display_name ilike '%VMware Horizon%'
+	group by customer_id ) as vm on c.id  = vm.customer_id 
+left join (select customer_id, count(distinct instance_id) as count_of_Citrix_systems
+	from migrator.installed_applications ia 
+	where application_display_name ilike '%Citrix%'
+	group by customer_id ) as ci on c.id  = ci.customer_id 
+left join (select customer_id, count(distinct instance_id) as count_of_RemoteDesktop_systems
+	from migrator.installed_applications ia 
+	where application_display_name ilike '%Remote Desktop%'
+	group by customer_id ) as rdp on c.id  = rdp.customer_id 
+where count_of_VMwareHorizon_systems is not null or count_of_Citrix_systems is not null or count_of_RemoteDesktop_systems is not null 
+
